@@ -13,6 +13,31 @@
 	background-image: url(../image1/icon/grade-24px_hover.svg);
 }
 
+.icon.eco::before{
+	background-image: url(../image1/icon/eco-24px.svg);
+}
+.icon.eco:hover::before{
+	background-image: url(../image1/icon/eco-24px_hover.svg);
+}
+.icon.face::before{
+	background-image: url(../image1/icon/face-24px.svg);
+}
+.icon.face:hover::before{
+	background-image: url(../image1/icon/face-24px_hover.svg);
+}
+.icon.favorite::before{
+	background-image: url(../image1/icon/favorite-24px.svg);
+}
+.icon.favorite:hover::before{
+	background-image: url(../image1/icon/favorite-24px_hover.svg);
+}
+.icon.pan_tool::before{
+	background-image: url(../image1/icon/pan_tool-24px.svg);
+}
+.icon.pan_tool:hover::before{
+	background-image: url(../image1/icon/pan_tool-24px_hover.svg);
+}
+
 .icon.three::before{
 	background-image: url(../image1/icon/mo.svg);
 }

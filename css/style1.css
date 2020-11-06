@@ -38,6 +38,7 @@
 	width: 50px;
 	margin-left:20px;
 	margin-bottom:15px;
+	border-radius: 5px;
 	
 }
 
@@ -50,6 +51,7 @@
 .link-fly:hover{
     background: silver;
 	width:200px;
+	border-radius: 5px;
 }
 
 .link{
@@ -100,6 +102,7 @@
     justify-content: flex-start;
 	margin-left: 15px;
 	margin-bottom:15px;
+	border-radius: 11px;
 }
 .heading{
 	display:flex;
@@ -148,11 +151,11 @@
 	border-width: 0px 0px 1px 0px;	
 	display: flex;
 }
-.threedotslincs:first-child{
+ .threedotslincs:first-child{ 
 	padding: 0;
-	width: 100%;
-	justify-content: flex-end;
-}
+	width: 100%; 
+	justify-content: flex-end; 
+ } 
 
 
 .threedotslincs:hover{
@@ -209,6 +212,7 @@
 	font-size: 30px;
 	display: flex;
 	border: 3px #708090 solid;
+	border-radius: 0px 0px 15px 15px;
 	display: none;
 	position: absolute;
 	
@@ -234,7 +238,7 @@
 	border: 3px white solid;
 	border-radius: 15px;
 	line-height: 54px;
-	border-radius: 15px 0px 0px 15px;
+	border-radius: 0px 0px 0px 15px;
 }
 .insidelinkright:hover{
 	color: red;
@@ -263,7 +267,7 @@
 	border: 3px white solid;
 	border-radius: 15px;
 	line-height: 54px;
-	border-radius: 0px 15px 15px 0px;
+	border-radius: 0px 0px 15px 0px;
 }
 .insidelinkleft:hover{
 	color: red;
@@ -314,8 +318,6 @@ footer{
 
 
 
-
-	
 	
 	
 	

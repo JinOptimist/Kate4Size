@@ -287,37 +287,35 @@ footer{
 	height: 20px;
 	background: gray;
 }
-(.cover{
-	position: fixed;
-	background:black;
-	opacity: 0.4;
-	width: 100%;
-    height: 100vh;
-	top:0;
-	
-}
-.baner{
-	position: fixed;
-	
+
+
+.topic{
+	font-size: 30px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	top:0;
-	width: 100%;
-    height: 100vh;
-	
 }
-.modelbaner{
-	max-height:600px;
-	max-width:600px;
-   
-})
+
+.topic::before{
+	content: ' ';
+    width: 100px;
+    height: 100px;
+	background-image: url(../image1/+Topless.jpg);
+	background-size: contain;
+}
+
+.topic::after{
+	content: ' ';
+	width: 100px;
+    height: 100px;
+	background-image: url(file:///D:/+GitHub/Kate4Size/image1/model5.jpg);
+	background-size: cover;
+}
 
 
 
 
 
-
+	
 	
 	
 	

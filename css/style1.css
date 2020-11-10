@@ -298,7 +298,6 @@ footer{
 	display: flex;
 	align-items: center;
 }
-
 .topic::before{
 	content: ' ';
     width: 100px;
@@ -314,11 +313,85 @@ footer{
 	background-image: url(file:///D:/+GitHub/Kate4Size/image1/model5.jpg);
 	background-size: cover;
 }
-
-
-
-
+.training-block{
+	width: 550px;
+	height: 430px;
+	border: 1px black solid;
+	margin-left: 25px;
+	display: flex;
+}
+.training-block-image{
+	width: 50%;
+	height: 100%;
 	
+	
+	
+	
+}
+.training-block-txt{
+	width: 50%;
+	height: 100%;
+	border: 1px black solid;
+	border-width: 0px 0px 0px 1px;
+	
+	
+	
+}.training-block-txt-up{
+	width: 100%px;
+	height: 50%;
+	border: 1px black solid;
+	border-width: 0px 0px 1px 0px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+		
+}
+}.training-block-txt-bottom{
+	width: 100%;
+	height: 50%;
+	border: 1px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.training-block-image-name{
+	width: 60px;
+	padding-bottom:10px;
+	padding-top: 10px;
+	font-size:40px;
+	writing-mode: tb-rl;
+	transform:rotate(180deg);
+	border: 1px black solid;
+	border-width: 0px 0px 1px 1px;
+	background: white;
+	margin-top: 253px;
+	
+}
+.training-block-txt-up-name{
+	font-size:40px;
+	background: white;
+	border: 1px black solid;
+	border-width: 1px 0px 0px 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 56px;
+	
+	
+	
+}
+.training-block-txt-bottom-name{
+	font-size:40px;
+	writing-mode: tb-rl;
+	transform:rotate(180deg);
+	background: white;
+	border: 1px black solid;
+	padding-top: 10px;
+	padding-bottom:10px;
+	width: 60px;
+	
+	
+}
 	
 	
 	

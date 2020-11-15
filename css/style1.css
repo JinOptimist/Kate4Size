@@ -257,9 +257,8 @@
 
 .uncle{
 	background: #2F4F4F;
-	display: flex;
-	flex-wrap: wrap;
 	flex: 1;
+	min-height: 500px;
 }
 footer{
 	background: silver;
@@ -390,7 +389,14 @@ footer{
     justify-content: center;
 }
 	
-	
+.page{
+	display: none;
+	flex-wrap: wrap;
+}
+
+.page:target{
+	display: flex;
+}
 	
 	
 	

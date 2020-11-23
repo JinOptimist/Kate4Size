@@ -21,12 +21,13 @@ header{
 	background: #DCDCDC;
 }	
 .menu{	
-	background: #DCDCDC;
+	
 	width: 50px;
 	height: 330px;
 	margin-left: 40px;
 	margin-right: 40px;
-	border-radius: 5px
+	border-radius: 5px;
+	position: absolute;
 }
 .link-fly{
     position:absolute;
@@ -180,6 +181,61 @@ header{
 .inside-link-button:last-child{
 	border-radius: 0px 0px 11px 0px;
 	border: 3px #ccc solid;
+}
+.window{
+	display: flex;
+	height: 100vh;
+	width: 100vh;
+}
+
+.window-img{
+	flex: 1;
+}
+.window-txt{
+	flex: 1;
+}
+.window3 img{
+	max-width: 500px;
+}
+.window3-up{
+	display: flex;
+	
+}
+.window3-up-left{
+	flex: 1;
+}
+.window3-up-centr{
+	flex: 1;
+}
+.window3-up-right{
+	flex: 1;
+}
+.window3-bottom{
+	display: flex;
+}
+.window3-bottom-left{
+	flex: 1;
+}
+.window3-bottom-right{
+	flex: 1;
+}
+.chest{
+	/* position:absolute; */
+	height: 100vh;
+	width: 100vh;
+}
+.chest img{
+	
+	height: 100px;
+	width: 100px;
+}
+.chest-up{
+	display: flex;
+	justify-content:space-between;
+}
+.chest-bottom{
+	display: flex;
+	justify-content:space-between;
 }
 footer{
 	font-size: 20px;

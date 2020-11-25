@@ -58,16 +58,23 @@ header{
 	background: #B0C4DE;
 }
 
-.content{
+.content{	
+	display: flex;
 	background: #DCDCDC;
 	flex: 1;
+	
 }	
 .page{
 	display: none;
 	flex-wrap: wrap;
 }
-
 .page:target{
+	display: flex;
+}
+.news{
+	margin-left: 90px;
+	flex-wrap: wrap;
+	flex: 1;
 	display: flex;
 }
 .blok{
@@ -96,9 +103,7 @@ header{
 	width: 600px;
 	flex-wrap: wrap;
 	display: flex;
-	flex: 1;
-	
-	
+	flex: 1;	
 }
 .training-block-image{
 	flex: 1;
@@ -106,10 +111,7 @@ header{
 	/* border-width: 3px 0px 3px 3px; */
 	/* border-radius: 0px 0px 0px 11px; */
 	justify-content: center;
-    align-items: center;
-	
-	
-	
+    align-items: center;	
 }
 .image-inside{
 	display: flex;
@@ -122,16 +124,14 @@ header{
 	max-width: 100%;
 	max-height: 100%;
 }
-
 .training-block-txt{
 	flex: 1;
 	font-size: 20px;
-	/* border: 2px #A9A9A9 solid; */
-	
-	/* border-radius: 0px 0px 11px 0px; */
-	height: 445px;
+	/* border: 2px #A9A9A9 solid; */	
+	/* border-radius: 0px 0px 11px 0px; */	
 }
 .txt-border{
+	height: 95%;
 	border: 2px #A9A9A9 solid;
 	padding: 5px;
 }
@@ -145,6 +145,7 @@ header{
 	display: none;
 	position: absolute;
 	align-items:flex-end;
+	background: white;
 }
 .blok:hover .insidelinkblok{
 	display: flex;
@@ -153,7 +154,7 @@ header{
 	display:flex;
 	justify-content:space-around;
 	flex: 1;
-	background: white;
+	
 }
 .inside-link-button{
 	flex: 1;

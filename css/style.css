@@ -27,11 +27,11 @@ header{
 	margin-left: 40px;
 	margin-right: 40px;
 	border-radius: 5px;
-	position: fixed;
+	
 	z-index: 1;
 }
 .link-fly{
-    position:absolute;
+    position: fixed;
 	width:50px;
 	overflow:hidden;
 	border-radius: 5px;
@@ -73,7 +73,6 @@ header{
 	display: flex;
 }
 .news{
-	margin-left: 90px;
 	flex-wrap: wrap;
 	flex: 1;
 	display: flex;
@@ -259,28 +258,46 @@ header{
 .right-column{
 	flex: 2;
 }
-.chest{
-	position:absolute;
-	height: 100vh;
-	width: 100%;
+.page-size{	
+	display: flex;
+	height: 600px;
+	width: 600px;
 	flex-direction: column;
-	justify-content:space-between;
+	border-radius: 11px;
+	border: 2px #808080 solid;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+.page-size-naked{
+	display: none;
+	height: 600px;
+	width: 600px;
+	flex-direction: column;
+	border-radius: 11px;
+	border: 2px #808080 solid;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+.page-size-name{	
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;	
+}
+.page-size:nth-of-type(odd){	
+	flex-direction: column-reverse;
+}
+.page-size-img{
+	flex: 1;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.chest img{
-	height: 100px;
-	width: 100px;
-	
+.page-size-img img{
+	max-height: 100%;
+	max-width: 100%;
 }
-.chest-up{
-	display: flex;
-	justify-content:space-between;
-	
-}
-.chest-bottom{
-	display: flex;
-	
-}
+
 footer{
 	font-size: 20px;
 	background: #DCDCDC;

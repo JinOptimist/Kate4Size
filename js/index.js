@@ -16,6 +16,10 @@ $(document).ready(function(){
 	});
 	
 	$('.sisters-img').click(function(){
-		$(this).toggleClass('full-screen');
+		$(this).toggleClass('big');
+	});
+	
+	$('.sisters').click(function(){
+		$(this).toggleClass('one-image');
 	});
 });

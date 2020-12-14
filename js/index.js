@@ -22,4 +22,8 @@ $(document).ready(function(){
 	$('.sisters').click(function(){
 		$(this).toggleClass('one-image');
 	});
+	
+	$('.binding-img').click(function(){
+		$(this).toggleClass('none');
+	});
 });

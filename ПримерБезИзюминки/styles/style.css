@@ -1,0 +1,10 @@
+.red{
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin: 2px;
+}
+
+.sample{
+	max-height: 600px;
+}

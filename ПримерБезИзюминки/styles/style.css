@@ -8,3 +8,14 @@
 .sample{
 	max-height: 600px;
 }
+
+.add{
+	background: red;
+}
+.reduct{
+	background: green;
+}
+
+.carousel{
+	display: flex;
+}

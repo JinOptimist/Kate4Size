@@ -1,24 +1,23 @@
 $(document).ready(function(){
 	var boobsImages = [
-		'img/Girl10.png', 
-		'img/Girl5.jpg', 
-		'img/CyberpunkPack/Girl4.png',
-		'img/Girl11.png', 
-		'img/Girl12.png', 
-		'img/Girl13.png', 
+		'img/Girl10.png',//0 
+		'img/Girl5.jpg', //1
+		'img/CyberpunkPack/Girl4.png',//2
+		'img/Girl11.png', //3
+		'img/Girl12.png', //4
+		'img/Girl13.png', //5
+		'img/Girl14.jpg', //6		
 	];
+	
+	//Выполнил один раз как только включилась страница
 	drawBoobs();
 	
 	$('.add').click(function(){
-		// var boobSizeText = $('.size').text();
-		// var boobSize  = boobSizeText - 0;
-		// var boosSizeNew = boobSize + 1;
-		// $('.size').text(boosSizeNew);
-		
 		var boobSize = $('.size').text() - 0;
-		if (boobSize < 5){
+		if (boobSize < 6){
 			$('.size').text(boobSize + 1);
 		}
+		//выполняем каждый раз, как увеличили размер
 		drawBoobs();
 	});
 	
@@ -28,6 +27,7 @@ $(document).ready(function(){
 		if (boobSize > 0){
 			$('.size').text(boobSize - 1);
 		}
+		//выполняем каждый раз, как уменьшили размер
 		drawBoobs();
 	});
 	
@@ -46,7 +46,7 @@ $(document).ready(function(){
 		}
 	});
 	
-
+	name 
 });
 
 
@@ -84,7 +84,22 @@ var boosNumber3 = boobsImages[2];
 boobsImages[0] = 'ima/CoolBoobs0';
 
 
+var kate = {};
 
+var kateFull = {
+	name: 'Катька',
+	boobsSize: 4,
+	hasChildren: true,
+	hasFlat: false,
+};
+
+if (kateFull.hasChildren){
+	console.log('молодец');
+	console.log(kateFull);
+	console.log(kateFull.name);	
+}
+
+kateFull.hasFlat = true;
 
 
 

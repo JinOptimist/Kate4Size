@@ -10,7 +10,7 @@ $(document).ready(function(){
 	];
 	
 	//Выполнил один раз как только включилась страница
-	drawBoobs();
+		();
 	
 	$('.add').click(function(){
 		var boobSize = $('.size').text() - 0;
@@ -46,7 +46,20 @@ $(document).ready(function(){
 		}
 	});
 	
-	name 
+	function init(){
+		drawBoobs();
+		var boobSizeMax = boobsImages.length;
+		var minUrl = boobsImages[0];
+		var maxUrl = boobsImages[boobSizeMax - 1];
+		
+		$('.min').attr('src', minUrl);
+		$('.max').attr('src', maxUrl);
+		
+		console.log('Меня зовут ' + minUrl + ". А тебя?");
+		
+		console.log('boobSizeMax = ' + boobSizeMax);
+		console.log('maxUrl = ' + maxUrl);
+	}
 });
 
 

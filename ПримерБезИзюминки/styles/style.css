@@ -7,15 +7,21 @@
 
 .sample{
 	max-height: 600px;
+	text-align:center;
 }
-
+.maxmin{
+	text-align:center;
+}
 .add{
 	background: red;
 }
 .reduct{
 	background: green;
 }
-
+.min,
+.max{
+	max-height: 600px;
+}
 .carousel{
 	display: flex;
 }

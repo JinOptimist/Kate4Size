@@ -343,6 +343,10 @@ header{
 	background:#696969;
 	align-items: center;	
 }
+.binding img{
+	max-height:100%;
+	max-width: 100%;
+}
 .binding-img{
 	flex: 1;
 	display: flex;
@@ -356,7 +360,12 @@ header{
 	max-height:100%;
 	max-width: 100%;
 }
-
+.carousel{
+	display: flex;
+}
+.carousel-img{
+	
+}
 footer{
 	font-size: 20px;
 	background: #DCDCDC;

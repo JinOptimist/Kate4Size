@@ -193,6 +193,10 @@ header{
 	flex-direction: column;
 	margin-left: 20px;
 }
+
+.gallery-blok.active .gallery-inside{
+	border-color: red;
+}
 .gallery-blok.full-screen .gallery-inside{
 	position: fixed;
     width: 100%;

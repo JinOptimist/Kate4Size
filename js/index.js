@@ -37,13 +37,18 @@ $(document).ready(function(){
 		'image/kitchen/kitchen8.jpg', //6	
 		'image/kitchen/kitchen9.jpg',
 	];
+	
 	init();
 	
 	$('.add').click(function(){
 		var namberKithen = $('.namber').text() - 0;
-		if (namberKithen < 9){
+		if (namberKithen < objImages.length - 1){
 			$('.namber').text(namberKithen + 1);
 		}
+		if (namberKithen == objImages.length - 1){
+			$('.namber').text(0);
+		}
+		
 		//выполняем каждый раз, как увеличили размер
 		carouselKithen();
 	});
@@ -52,6 +57,9 @@ $(document).ready(function(){
 		var namberKithen = $('.namber').text() - 0;		
 		if (namberKithen > 0){
 			$('.namber').text(namberKithen - 1);
+		}
+		if (namberKithen == 0){
+			$('.namber').text(objImages.length - 1);
 		}
 		//выполняем каждый раз, как уменьшили размер
 		carouselKithen();

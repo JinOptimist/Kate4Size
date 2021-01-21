@@ -397,6 +397,12 @@ header{
 .knees-preview img{
 	max-height: 100%;
 }
+.knees-preview .active{
+	border: 2px red solid;
+}
+/* .knees-preview img[knees-id='2']{ */
+	/* border: 2px red solid; */
+/* } */
 footer{
 	font-size: 20px;
 	background: #DCDCDC;

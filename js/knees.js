@@ -40,6 +40,20 @@ $(document).ready(function(){
 		var namberKithen = $('.namber-knees').text() - 0;
 		var url = imageKneesUrls[namberKithen];
 		$('.carousel-img').attr('src', url);
+		
+		
+		
+		//пример селектора 
+		//.knees-preview img[knees-id='2']
+		//у селектора мы меняем значение "2" на переменную "namberKithen", 
+		//где высчитывается номер картинки
+		var currentImg = $(".knees-preview img[knees-id='" + namberKithen + "']");
+		
+		
+		$(".knees-preview img").removeClass('active');
+		currentImg.addClass('active');
+		
+		
 	}
 	function init(){
 		for(var i = 0; i < imageKneesUrls.length; i++){
@@ -54,7 +68,7 @@ $(document).ready(function(){
 		//создаём тэг img
 		var img = $('<img>');
 		img.attr('src', urlForImage);
-		
+		img.attr("knees-id", index);
 		
 		//Добавили на страницу
 		//Только сейчас пользователь увидит блок и всех его детей

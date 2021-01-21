@@ -17,7 +17,7 @@ $(document).ready(function(){
 		for(var i = 0; i < imageUrls.length; i++){
 			//Эти команды будут выполняться несколько раз
 			createBoobs(imageUrls[i], i);
-			alert(i);
+
 		}
 	}
 	

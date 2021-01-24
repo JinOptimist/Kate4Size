@@ -12,7 +12,19 @@ $(document).ready(function(){
 	
 	init();
 	
-	$('.addKnees').click(function(){
+	$(document).keyup(function(e) {
+		if (e.keyCode == 39){
+			onKneesAdd();
+		}
+		if (e.keyCode == 37){
+			onKneesReduct();
+		}
+	});
+	
+	$('.addKnees').click(onKneesAdd);
+	$('.reductKnees').click(onKneesReduct);
+	
+	function onKneesAdd(){
 		if (indexOfCurrentImage < imageKneesUrls.length){
 			indexOfCurrentImage = indexOfCurrentImage + 1;
 		}
@@ -22,9 +34,9 @@ $(document).ready(function(){
 		
 		//выполняем каждый раз, как увеличили размер
 		drawImageAndPreview();
-	});
+	}
 	
-	$('.reductKnees').click(function(){		
+	function onKneesReduct(){		
 		if (indexOfCurrentImage > 0){
 			indexOfCurrentImage = indexOfCurrentImage - 1
 		}
@@ -33,7 +45,7 @@ $(document).ready(function(){
 		}
 		//выполняем каждый раз, как уменьшили размер
 		drawImageAndPreview();
-	});
+	}
 	
 	function drawImageAndPreview(){
 		var url = imageKneesUrls[indexOfCurrentImage];

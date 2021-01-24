@@ -370,8 +370,8 @@ header{
 	height: 600px;	
 }
 .carousel-centr{
-	width: 559px;
-	height: 600px;
+	width: 600px;
+	height: 559px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -403,6 +403,30 @@ header{
 /* .knees-preview img[knees-id='2']{ */
 	/* border: 2px red solid; */
 /* } */
+.orgasm{
+	display:flex;
+}
+.carousel.vertical{
+	display:flex;
+	flex-direction:column;
+	margin-left: 120px;
+}
+.orgasm-preview{
+	width: 100px;
+	height: 600px;
+	background: #696969;
+	display:flex;
+	flex-direction:column;
+	margin-left: 30px;
+	
+}
+.orgasm-preview img{
+	max-width: 100%;
+	margin-bottom: 4px;
+}
+.orgasm-preview .active{
+	border: 2px red solid;
+}
 footer{
 	font-size: 20px;
 	background: #DCDCDC;

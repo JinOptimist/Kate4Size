@@ -37,10 +37,10 @@ $(document).ready(function(){
 	}
 	
 	function onKneesReduct(){		
-		if (indexOfCurrentImage > 0){
+		if (indexOfCurrentImage >= 0){
 			indexOfCurrentImage = indexOfCurrentImage - 1
 		}
-		if (indexOfCurrentImage == 0){
+		if (indexOfCurrentImage < 0){
 			indexOfCurrentImage = imageKneesUrls.length - 1;
 		}
 		//выполняем каждый раз, как уменьшили размер

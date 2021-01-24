@@ -14,7 +14,18 @@ $(document).ready(function(){
 	
 	init();
 	
-	$('.addOrgasm').click(function(){
+	$(document).keyup(function(e) {
+		if (e.keyCode == 40){
+			onOrgasmAdd();
+		}
+		if (e.keyCode == 38){
+			onOrgasmReduct();
+		}
+	});
+	$('.addOrgasm').click(onOrgasmAdd);
+	$('.reductOrgasm').click(onOrgasmReduct);
+	
+	function onOrgasmAdd(){
 		if (indexOfCurrentImage < imageOrgasmUrls.length){
 			indexOfCurrentImage = indexOfCurrentImage + 1;
 		}
@@ -24,8 +35,8 @@ $(document).ready(function(){
 		
 		//выполняем каждый раз, как увеличили размер
 		drawImageAndPreview();
-	});
-	$('.reductOrgasm').click(function(){
+	}
+	function onOrgasmReduct(){
 		if (indexOfCurrentImage >= 0){
 			indexOfCurrentImage = indexOfCurrentImage - 1
 		}
@@ -34,7 +45,7 @@ $(document).ready(function(){
 		}
 		//выполняем каждый раз, как уменьшили размер
 		drawImageAndPreview();
-	});
+	}
 	function drawImageAndPreview(){
 		var url = imageOrgasmUrls[indexOfCurrentImage];
 		$('#orgasm .carousel-img').attr('src', url);

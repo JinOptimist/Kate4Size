@@ -6,6 +6,9 @@
 	content: ' ';
 	margin: 5px;
 }
+.icon.close::before{
+	background-image: url(../image/icon/close-24px.svg);
+}
 .icon.star::before{
 	background-image: url(../image/icon/grade-24px.svg);
 }

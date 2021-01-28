@@ -1,13 +1,14 @@
 $(document).ready(function(){
 	var numberCoolPrincess = 0;
 	var imageUrls = [
-		'image/jasmine/Алладин1241913.png',
-		'image/jasmine/unnamed.png',
-		'image/jasmine/5005f4d.jpg',
-		'image/jasmine/f496471432.png',
-		'image/jasmine/Алладин1241913.png',
-		'image/jasmine/Алладин1241913.png',
-		'image/jasmine/Алладин1241913.png',
+		'image/PlusSize/PlusSize1.jpg',
+		'image/PlusSize/PlusSize2.jpg',
+		'image/PlusSize/PlusSize3.jpg',
+		'image/PlusSize/PlusSize4.jpeg',
+		'image/PlusSize/PlusSize5.jpg',
+		'image/PlusSize/PlusSize6.jpg',
+		'image/PlusSize/PlusSize7.webp',
+		'image/PlusSize/PlusSize8.webp',
 	];
 	
 	init();
@@ -52,6 +53,11 @@ $(document).ready(function(){
 		cuurenPrincess.addClass('active');
 		
 		$('.princess0number').text(numberCoolPrincess);
+	});
+$('#gallery .icon.close').click(function(){		
+		
+		$('#gallery .popup').hide();
+		
 	});
 
 });

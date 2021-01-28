@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var numberCoolPrincess = 0;
+	var numberCoolPlusSize = 0;
 	var imageUrls = [
 		'image/PlusSize/PlusSize1.jpg',
 		'image/PlusSize/PlusSize2.jpg',
@@ -27,6 +27,9 @@ $(document).ready(function(){
 		var divGalleryBlok = $('<div>');
 		//Добавляем класс к созданному блоку
 		divGalleryBlok.addClass('gallery-blok');
+		//data-id это название атрибута где мы указывает какой номер у переменной
+		//мы ее тут создали и назвали ( если у атрибута 2 значения значит мы его туда положили , 
+		//если одно data-id, то забрали 
 		divGalleryBlok.attr('data-id', index);
 		
 		var divGalleryIinside = $('<div>');
@@ -45,21 +48,33 @@ $(document).ready(function(){
 	}
 	
 	$('.princess-add').click(function(){
-		numberCoolPrincess = numberCoolPrincess + 1;
+		numberCoolPlusSize = numberCoolPlusSize + 1;
 		
 		var cuurenPrincess = 
-			$('#gallery .gallery-blok[data-id=' + numberCoolPrincess +']');
+			$('#gallery .gallery-blok[data-id=' + numberCoolPlusSize +']');
 		$('#gallery .gallery-blok').removeClass('active');
 		cuurenPrincess.addClass('active');
 		
-		$('.princess0number').text(numberCoolPrincess);
+		$('.princess0number').text(numberCoolPlusSize);
 	});
-$('#gallery .icon.close').click(function(){		
-		
-		$('#gallery .popup').hide();
-		
+	
+	$('#gallery .icon.close').click(function(){			
+		$('#gallery .popup').hide();		
 	});
-
+	$('#gallery .gallery-blok').click(function(){			
+		$('#gallery .popup').show();		
+		//извлекла овца порядковый номер картинки в массиве
+		var numberImg = $(this).attr('data-id') - 0;
+		//используя порядковый номер, из массива достали урл 
+		var urlForImage = imageUrls[numberImg];
+		$('#gallery .popup-content img').attr('src', urlForImage);;
+	});
+	function onPopupClick(){
+		
+		
+				
+	}
+	
 });
 
 

@@ -69,11 +69,7 @@ $(document).ready(function(){
 		var urlForImage = imageUrls[numberImg];
 		$('#gallery .popup-content img').attr('src', urlForImage);;
 	});
-	function onPopupClick(){
-		
-		
-				
-	}
+	
 	
 });
 

@@ -496,6 +496,17 @@ header{
 	max-height: 95%;
 	max-width: 95%;
 }
+.link-group{
+	display: none;
+    left: 250px;
+    background: azure;
+    position: fixed;
+    padding: 5px;
+    border-radius: 11px;
+    border: 2px #808080 solid;
+
+}
+
 footer{
 	font-size: 20px;
 	background: #DCDCDC;

@@ -16,11 +16,24 @@ $(document).ready(function(){
 	function createNakedBottom(urlForImageBottom, index){
 		var divNakedBottom = $('<div>');
 		divNakedBottom.addClass('cssDivNakedBottom');
+		
+		var divNakedBottomСlose = $('<div>');
+		divNakedBottomСlose.addClass('icon close');
+		
 		var divNakedBottomInside = $('<div>');
 		divNakedBottomInside.addClass('nakedBottomContentInside');
+		
+		var divNakedBottomInsideImg = $('<div>');
+		divNakedBottomInsideImg.addClass('nakedBottomContentInsideImg');
+		
 		divNakedBottom.append(divNakedBottomInside);
+		
+		divNakedBottom.append(divNakedBottomInsideImg);
+		
+		divNakedBottomInside.append(divNakedBottomСlose);
+		
 		var imgNakedBottom = $('<img>');
-		divNakedBottomInside.append(imgNakedBottom);
+		divNakedBottomInsideImg.append(imgNakedBottom);
 		imgNakedBottom.attr('src', urlForImageBottom);
 		
 		

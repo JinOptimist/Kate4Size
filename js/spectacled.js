@@ -1,21 +1,18 @@
 $(document).ready(function(){
-	
-	var imageUrlsNakedBottom = [
-		'image/nakedBottom/nakedbottom1.jpg',
-		'image/nakedBottom/nakedbottom2.jpg',
-		'image/nakedBottom/nakedbottom3.jpg',
-		'image/nakedBottom/nakedbottom4.jpg',
-		
+	var imageUrlsSpectacled = [
+		'image/spectacled/spectacled1.jpg',
+		'image/spectacled/spectacled2.jpg',
+		'image/spectacled/spectacled3.jpg',		
 	];
-	initNakedBottom();
 	
-	function initNakedBottom(){		
-		$('#nakedBottom .nakedBottomContent').empty();
-		for(var t = 0; t < imageUrlsNakedBottom.length; t++){
-			createNakedBottom(imageUrlsNakedBottom[t], t);
+	initSpectacled();
+	
+	function initSpectacled(){		
+		$('#spectacled .nakedBottomContent').empty();
+		for(var t = 0; t < imageUrlsSpectacled.length; t++){
+			createNakedBottom(imageUrlsSpectacled[t], t);
 		}
 	}
-	
 	function createNakedBottom(urlForImageBottom, index){
 		var divNakedBottom = $('<div>');
 		divNakedBottom.addClass('cssDivNakedBottom');
@@ -41,29 +38,29 @@ $(document).ready(function(){
 		imgNakedBottom.attr('src', urlForImageBottom);
 		
 		
-		$('#nakedBottom .nakedBottomContent').append(divNakedBottom);
+		$('#spectacled .nakedBottomContent').append(divNakedBottom);
 		
-		divNakedBottomСlose.click(onNakedBottomСlose);
-		
-		
+		divNakedBottomСlose.click(onSpectacledСlose);		
 	}	
-	
-	function onNakedBottomСlose(){		
+	function onSpectacledСlose(){		
 		var idToСlose = $(this)
 			.closest(".cssDivNakedBottom")			
 			.attr('nakedBottom-id') - 0;
 			
-		imageUrlsNakedBottom.splice(idToСlose, 1);	
-		initNakedBottom();
+		imageUrlsSpectacled.splice(idToСlose, 1);	
+		initSpectacled();
 	}
 	
 		
-	$('.nakedBottomInput').click(	function(){
-		var urlnakedBottom = $('.nakedBottomTxt').val();
-		imageUrlsNakedBottom.push(urlnakedBottom);
-		$('#nakedBottom .nakedBottomContent').empty();
-		initNakedBottom();
+	$('#spectacled .nakedBottomInput').click(function(){
+		var urlnakedBottom = $('#spectacled .nakedBottomTxt').val();
+		imageUrlsSpectacled.push(urlnakedBottom);
+		$('#spectacled .nakedBottomContent').empty();
+		initSpectacled();
 	});
-		
+	
+	$('#spectacled .icon.close').click(function(){			
+		$('#spectacled .popup').hide();
+	});
 	
 });

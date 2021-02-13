@@ -40,8 +40,12 @@ $(document).ready(function(){
 		
 		$('#spectacled .nakedBottomContent').append(divNakedBottom);
 		
-		divNakedBottomСlose.click(onSpectacledСlose);		
+		divNakedBottomСlose.click(onSpectacledСlose);
+		
+		$('#spectacled .cssDivNakedBottom').click(onClickCssDivNakedBottom);
+		
 	}	
+	
 	function onSpectacledСlose(){		
 		var idToСlose = $(this)
 			.closest(".cssDivNakedBottom")			
@@ -63,4 +67,42 @@ $(document).ready(function(){
 		$('#spectacled .popup').hide();
 	});
 	
+	function onClickCssDivNakedBottom(){			
+		$('#spectacled .popup').show();		
+		//извлекла овца порядковый номер картинки в массиве
+		var numberImg = $(this).attr('nakedBottom-id') - 0;
+		//используя порядковый номер, из массива достали урл 
+		var urlForImage = imageUrlsSpectacled[numberImg];
+		$('#spectacled .popup-content img').attr('src', urlForImage);
+		$('#spectacled .popup-content img').attr('index', numberImg);
+	}
+	$('#spectacled .icon.skipNext').click(onClickNext);
+	$('#spectacled .icon.skipPrevious').click(onClickBack);
+	function onClickNext(){			
+		var indexImg = $('#spectacled .popup-content img').attr('index') - 0;
+		indexImg = indexImg + 1;
+		var urlForImage = imageUrlsSpectacled[indexImg];
+		$('#spectacled .popup-content img').attr('src', urlForImage);
+	}
+	function onClickBack(){			
+		var indexImg = $('#spectacled .popup-content img').attr('index');
+		numberImg = numberImg - 1;
+	}
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

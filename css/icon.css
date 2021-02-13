@@ -6,6 +6,13 @@
 	content: ' ';
 	margin: 5px;
 }
+
+.icon.skipPrevious::before{
+	background-image: url(../image/icon/skipPrevious.svg);
+}
+.icon.skipNext::before{
+	background-image: url(../image/icon/skipNext.svg);
+}
 .icon.close::before{
 	background-image: url(../image/icon/close-24px.svg);
 }

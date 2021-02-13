@@ -505,6 +505,7 @@ footer{
 	top: 0px;
 	right: 0px;
 	z-index: 12;
+	background: gray;
 }
 
 .popup-content{
@@ -520,8 +521,18 @@ footer{
 	z-index: 11;
 }
 .popup-content img{
-	max-width: 100%;
+	max-width: calc(100% - 100px);
     max-height: 100vh;	
+}
+.popup-carousel{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.icon.skipPrevious,
+.icon.skipNext{
+	background: gray;
+	
 }
 .popupImg{
 	display: flex;

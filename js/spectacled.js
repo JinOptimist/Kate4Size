@@ -1,16 +1,18 @@
 $(document).ready(function(){
-	var imageUrlsSpectacled = [
-		'image/spectacled/spectacled1.jpg',
-		'image/spectacled/spectacled2.jpg',
-		'image/spectacled/spectacled3.jpg',		
-	];
+	var imageUrlsSpectacled = [];
+	
+	for(var index = 1 ; index < 9 ; index++){
+		imageUrlsSpectacled.push('image/spectacled/spectacled' + index + '.jpg');
+		//'image/spectacled/spectacled' + index + '.jpg'
+		//`image/spectacled/spectacled${index}.jpg`
+	}
 	
 	initSpectacled();
 	$('#spectacled .popup').hide();
 	
 	function initSpectacled(){		
 		$('#spectacled .nakedBottomContent').empty();
-		for(var t = 0; t < imageUrlsSpectacled.length; t++){
+		for(var t = 0; t < imageUrlsSpectacled.length; t++){//true false
 			createNakedBottom(imageUrlsSpectacled[t], t);
 		}
 	}
@@ -109,12 +111,16 @@ $(document).ready(function(){
 	}
 });
 
-		if (indexImg >= 0){
-			indexImg = indexImg - 1
-		}
-		if (indexImg < 0){
-			indexImg = imageUrlsSpectacled.length - 1;
-		}
+
+
+
+
+
+
+
+
+
+
 
 
 

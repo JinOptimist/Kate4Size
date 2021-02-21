@@ -581,8 +581,23 @@ footer{
 	width: 100%;
 }
 
+.smooth-animation{
+	width: 200px;
+	height: 200px;
+	display: flex;
+}
 
+.smooth-animation .red{
+	width: 200px;
+	height: 200px;
+	background: red;
+}
 
+.smooth-animation .green{
+	width: 0px;
+	height: 200px;
+	background: green;
+}
 
 
 

@@ -4,23 +4,25 @@ $(document).ready(function(){
 		
 		var attrSide = $(this).attr("side");
 		
+		var frontImg = $(this).find('.reversal-img.front');
+		var backImg = $(this).find('.reversal-img.back');
 		
 		if (attrSide == "front"){
-			$('.reversal-img.front').animate({
+			frontImg.animate({
 				width: 0
 			}, 2000);
 			
-			$('.reversal-img.back').animate({
+			backImg.animate({
 				width: 400
 			}, 2000);
 			$(this).attr("side", "back");
 		}
 		if (attrSide == "back"){
-			$('.reversal-img.front').animate({
+			frontImg.animate({
 				width: 400
 			}, 2000);
 			
-			$('.reversal-img.back').animate({
+			backImg.animate({
 				width: 0
 			}, 2000);
 			

@@ -542,6 +542,23 @@ footer{
     width: 100%;
     height: 100vh;	
 }
+.smooth-animation{
+	width: 200px;
+	height: 200px;
+	display: flex;
+}
+
+.smooth-animation .red{
+	width: 200px;
+	height: 200px;
+	background: red;
+}
+
+.smooth-animation .green{
+	width: 0px;
+	height: 200px;
+	background: green;
+}
 .reversal-block{
 	flex-wrap: wrap;
     flex: 1;
@@ -554,7 +571,7 @@ footer{
     margin-left: 20px;    
     margin-bottom: 20px;
 	border-radius: 11px;
-    border: 2px #800000 solid;
+    border: 5px #800000 solid;
     background: #696969;
 	justify-content: center;
     align-items: center;
@@ -580,25 +597,59 @@ footer{
 	height: 100%;
 	width: 100%;
 }
-
-.smooth-animation{
-	width: 200px;
-	height: 200px;
+.reversal-content-alone{
+	width: 400px;
+    height: 500px;
+    display: flex;
+    margin-left: 20px;    
+    margin-bottom: 20px;
+	border-radius: 11px;
+    border: 5px #008080 solid;
+    background: #696969;
+	justify-content: center;
+    align-items: center;
+}
+.reversal-img-alone{
 	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
 }
-
-.smooth-animation .red{
-	width: 200px;
-	height: 200px;
-	background: red;
+.reversal-img-alone img{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	max-height: 100%;
+	max-width: 100%;
+	
 }
-
-.smooth-animation .green{
-	width: 0px;
-	height: 200px;
-	background: green;
+.reversal-content-height{
+	width: 400px;
+    height: 500px;
+    display: flex;
+    margin-left: 20px;    
+    margin-bottom: 20px;
+	border-radius: 11px;
+    border: 5px #DDA0DD solid;
+    background: #696969;
+	justify-content: center;
+    align-items: flex-start;
 }
-
+.reversal-img-height{
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	height: 100%;
+	width: 100%;
+	
+}
+.reversal-img-height img{
+	max-height: 100%;
+	max-width: 100%;
+	
+}
 
 
 

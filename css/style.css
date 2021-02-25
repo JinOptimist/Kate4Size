@@ -566,9 +566,10 @@ footer{
     align-items: center;
 	max-height: 100%;
 	max-width: 100%;
+	border-radius: 8px;
 }
 .reversal-img.front{
-	width: 400px;
+	width: 100%;
 }
 .reversal-img.back{
 	width: 0px;

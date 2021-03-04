@@ -558,6 +558,7 @@ footer{
     background: #696969;
 	justify-content: center;
     align-items: center;
+	cursor: pointer;
 	
 }
 .reversal-content img{

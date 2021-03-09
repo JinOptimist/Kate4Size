@@ -675,10 +675,37 @@ footer{
 	max-height: 100%;
 	max-width: 100%;
 }
-
-
-
-
+.chess-block{
+	flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+}
+.chess-content{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    margin-left: 20px;    
+    margin-bottom: 20px;
+	border-radius: 11px;
+    border: 5px #800000 solid;
+    background: #696969;
+	justify-content: center;
+    align-items: center;	
+}
+.chess-content-img{
+	width: 400px;
+    height: 500px;
+    display: flex;
+	justify-content: center;
+    align-items: center;	
+}
+.chess-content-img img{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	max-height: 100%;
+	max-width: 100%;
+}
 
 
 

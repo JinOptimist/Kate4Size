@@ -3,6 +3,7 @@ $(document).ready(function(){
 	
 	var coverImg = 'image/chess/chess7.jpg';
 	
+	
 	init();
 	
 	function init(){
@@ -20,6 +21,7 @@ $(document).ready(function(){
 		var divChess = $('<div>');
 		divChess.addClass('chess-content');
 		divChess.attr("chess-id", index);
+		divChess.attr("side", "back");
 		
 		var divImgChess = $('<div>');
 		divImgChess.addClass('chess-content-img');
@@ -35,15 +37,31 @@ $(document).ready(function(){
 	
 	
 	$('.chess-content').click(function(){
-		var nudeGirl = $(this).find('.chess-content-img');
+		var chessContent = $(this);
+		var nudeGirl = chessContent.find('.chess-content-img');
 		
-		
+		var indexUrl = chessContent.attr("chess-id") - 0; 
 		
 		flip(nudeGirl, 0, 90, backFlip);
 		
+		
+		
 		function backFlip(){
-			var newImage = 
-			nudeGirl.find('img').attr('src', coverImg);
+			var attrSide = chessContent.attr("side");
+			var newImage;
+			if (attrSide == "back"){
+				chessContent.attr("side", "front");
+				newImage = imageUrlsChess[indexUrl];
+			}
+			
+			if (attrSide == "front"){
+				chessContent.attr("side", "back");
+				newImage = coverImg;
+			}
+			
+			
+			nudeGirl.find('img').attr('src', newImage);
+			// nudeGirl.attr("sade", front);
 			flip(nudeGirl, 90, 0);
 		}
 	});

@@ -710,3 +710,56 @@ footer{
 
 
 
+
+
+.bald-block{
+	flex: 1;
+    display: flex;
+	
+	flex-direction:column;
+}
+.bald-content-up-bottom{
+    display: flex;
+	height: 200px;
+	width: 800px;
+	background: gray;
+	justify-content:space-between
+}
+
+.bald-content-centr{
+	display: flex;
+	height: 400px;
+	width: 800px;
+}
+.bald-img-small{
+	display: flex;
+	height: 200px;
+	width: 200px;
+	justify-content: center;
+    align-items: center;	
+}
+
+.bald-img-small img,
+.bald-centr-img img{
+	max-height: 0%;
+	max-width: 0%;
+	
+}
+.bald-centr-img{
+	display: flex;
+	height: 400px;
+	width: 400px;
+	justify-content: center;
+    align-items: center;
+	background: gray;
+	opacity: 0;
+	
+}
+
+.bald-right-left{
+	display: flex;
+	height: 400px;
+	width: 200px;
+	background: gray;
+	flex-direction:column-reverse;
+}

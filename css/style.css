@@ -714,8 +714,7 @@ footer{
 
 .bald-block{
 	flex: 1;
-    display: flex;
-	
+    display: flex;	
 	flex-direction:column;
 }
 .bald-content-up-bottom{
@@ -730,13 +729,15 @@ footer{
 	display: flex;
 	height: 400px;
 	width: 800px;
+	background: gray;
 }
 .bald-img-small{
 	display: flex;
 	height: 200px;
 	width: 200px;
 	justify-content: center;
-    align-items: center;	
+    align-items: center;
+	opacity: 1;	
 }
 
 .bald-img-small img,
@@ -761,5 +762,24 @@ footer{
 	height: 400px;
 	width: 200px;
 	background: gray;
-	flex-direction:column-reverse;
+	flex-direction:column-reverse;	
 }
+.left{	
+	opacity: 1;
+}
+.right{	
+	opacity: 1;
+}
+.up{
+	opacity: 1;
+}
+.bottom{
+	opacity: 1;
+}
+
+
+
+
+
+
+

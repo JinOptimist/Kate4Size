@@ -10,4 +10,9 @@ $(document).ready(function(){
 	$('.link-fly .icon.close').click(function(){			
 		$('.link-group').hide();
 	});	
+	
+	$('.link-fly .link .link').click(function(){			
+		$('.link-group').hide();
+	});	
 });
+

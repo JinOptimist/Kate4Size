@@ -374,7 +374,7 @@ header{
 }
 .carousel-centr{
 	width: 600px;
-	height: 559px;
+	height: 600px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -706,12 +706,6 @@ footer{
 	max-height: 100%;
 	max-width: 100%;
 }
-
-
-
-
-
-
 .bald-block{
 	flex: 1;
     display: flex;	
@@ -775,6 +769,31 @@ footer{
 }
 .bottom{
 	opacity: 1;
+}
+
+
+
+
+
+
+
+.elf-carousel{
+	display: flex;
+	width: 800px;
+	height: 400px;
+	margin-left: 40px;	
+}
+.elf-carousel-centr{
+	width: 800px;
+	height: 400px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background:	#696969;
+}
+.elf-carousel-centr img{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 

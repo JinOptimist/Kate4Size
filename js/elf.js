@@ -55,8 +55,12 @@ $(document).ready(function(){
 		//пример селектора #knees .carousel-img (id +стиль)
 		$('#elf .elf-carousel-img').attr('src', url);
 		
+		var currentImgElf = 
+			$(".elf-preview img[elf-id='" + indexOfCurrentImage + "']");
+		
+		
 		$("#elf .elf-preview img").removeClass('active');
-		currentImg.addClass('active');
+		currentImgElf.addClass('active');
 	}
 	function createPreviewElf(urlForImage, index){
 				

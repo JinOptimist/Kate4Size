@@ -5,7 +5,43 @@ $(document).ready(function(){
 	
 	var currentIndex = 2;
 	
-	var wifeUrls = [];
+	var wifeUrls = [
+		{
+			url: 'image/wife/wife01.jpg',
+			porn: 2,
+			nice: 7
+		},
+		{
+			url: 'image/wife/wife02.jpg',
+			porn: 2,
+			nice: 7
+		},
+		{
+			url: 'image/wife/wife03.jpg',
+			porn: 2,
+			nice: 7
+		},
+		{
+			url: 'image/wife/wife04.jpg',
+			porn: 2,
+			nice: 7
+		},
+		{
+			url: 'image/wife/wife05.jpg',
+			porn: 2,
+			nice: 7
+		},
+		{
+			url: 'image/wife/wife06.jpg',
+			porn: 2,
+			nice: 7
+		},
+		{
+			url: 'image/wife/wife07.jpg',
+			porn: 2,
+			nice: 7
+		},
+	];
 	var imageCount = 12;
 	
 	init();
@@ -49,10 +85,10 @@ $(document).ready(function(){
 	}
 	
 	function init(){
-		for(var index = 1 ; index <= imageCount ; index++){
-			var zero = index > 9 ? '' : '0';
-			wifeUrls.push('image/wife/wife' + zero + index + '.jpg');
-		}
+		// for(var index = 1 ; index <= imageCount ; index++){
+			// var zero = index > 9 ? '' : '0';
+			// wifeUrls.push('image/wife/wife' + zero + index + '.jpg');
+		// }
 		
 		initWifeImages();
 		
@@ -62,17 +98,23 @@ $(document).ready(function(){
 	function initWifeImages(){		
 		$('#reversal .reversal-block').empty();
 		for(var t = 0; t < wifeUrls.length; t++){//true false
-			createNakedBottom(wifeUrls[t], t);
+			var wife = wifeUrls[t];
+			createNakedBottom(wife, t);
 		}
 	}
 	
-	function createNakedBottom(urlForImageBottom, index){
+	function createNakedBottom(wife, index){
 		var divNakedBottom = $('<div>');
 		divNakedBottom.addClass('reversal-content');
 		divNakedBottom.attr('index', index);
 		
+		var rankBlock = $('<div>');
+		rankBlock.addClass('rank');
+		rankBlock.text(`porn: ${wife.porn}`);
+		divNakedBottom.append(rankBlock);
+		
 		var imgNakedBottom = $('<img>');
-		imgNakedBottom.attr('src', urlForImageBottom);
+		imgNakedBottom.attr('src', wife.url);
 		divNakedBottom.append(imgNakedBottom);
 		
 		$('#reversal .reversal-block').append(divNakedBottom);

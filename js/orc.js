@@ -46,16 +46,29 @@ $(document).ready(function(){
 	
 	init();
 	
+	$('#orc.bitches').click(onBitches);
+	$('#orc.porn').click(onPorn);
+	$('#orc.porn-saiz').click(onPornSaiz);
+	
+	// function onBitches(){
+		// for(var i = 0; i < orcsArray.length; i++){
+			// createOrc(orcsArray[i], i);
+		// }
+		
+		// var onBitchesOrc = divOrc;
+		
+		// divOrc.css('opacity', 1 - orcObj.bitches / 10);
+	// }
 	function init(){
 		for(var i = 0; i < orcsArray.length; i++){
 			createOrc(orcsArray[i], i);
 		}
 	}
-	
 	function createOrc(orcObj, index){
 		var divOrc = $('<div>');
 		divOrc.addClass('orc-content');
 		divOrc.css('border-color', orcObj.textColor);
+		divOrc.css('opacity', 1 - orcObj.bitches / 10);
 		
 		var divOrcHeader = $('<div>');
 		divOrcHeader.addClass('orc-content-header');

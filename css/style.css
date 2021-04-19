@@ -865,3 +865,18 @@ footer{
 #orc .name{
 	color: #FF69B4;
 }
+.button-orc-div{
+	display: flex;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.button-orc{
+	width: 100px;
+    height: 50px;
+	border-radius: 5px;
+    border: 2px #696969 solid;
+	margin-right: 10px;
+	
+	
+
+}

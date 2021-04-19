@@ -7,39 +7,44 @@ $(document).ready(function(){
 	
 	var wifeUrls = [
 		{
+			name: 'Соки любви',
 			url: 'image/wife/wife01.jpg',
-			porn: 2,
-			nice: 7
+			porn: 5,
+			nice: 3,
+			textColor: '#00FFCC'
+		
 		},
 		{
+			name: 'Счастливая эксбиционистка',
 			url: 'image/wife/wife02.jpg',
-			porn: 2,
-			nice: 7
+			porn: 4,
+			nice: 7,
+			textColor: '#FFFFCC',
 		},
 		{
+			name: 'Соска это не обзывательство',
 			url: 'image/wife/wife03.jpg',
-			porn: 2,
-			nice: 7
+			porn: 6,
+			nice: 4,
+			textColor: '#FFC00C'
 		},
 		{
-			url: 'image/wife/wife04.jpg',
-			porn: 2,
-			nice: 7
-		},
-		{
+			name: 'Подъезд не помеха',
 			url: 'image/wife/wife05.jpg',
-			porn: 2,
-			nice: 7
+			porn: 3,
+			nice: 6
 		},
 		{
-			url: 'image/wife/wife06.jpg',
-			porn: 2,
-			nice: 7
-		},
-		{
+			name: 'Стесняшка',
 			url: 'image/wife/wife07.jpg',
-			porn: 2,
+			porn: 1,
 			nice: 7
+		},
+		{
+			name: 'Самый важный навык',
+			url: 'image/wife/wife12.jpg',
+			porn: 7,
+			nice: 4
 		},
 	];
 	var imageCount = 12;
@@ -58,12 +63,16 @@ $(document).ready(function(){
 		var fullWidth = (containerWidth - 24 * imageCount) / getEllerSumm();
 		var fullHeight = fullWidth * heightScale;
 		
+		$('.reversal-content').removeClass('active');
 		for(var t = 0; t < wifeUrls.length; t++){
 			var diff = getDiff(t);
 			$('.reversal-content[index=' + t + ']').animate({
 				width: fullWidth / diff,
 				height: fullHeight / diff
 			}, 2000);
+			if (diff == 1){
+				$('.reversal-content[index=' + t + ']').addClass('active');
+			}
 		}
 	}
 	
@@ -85,11 +94,6 @@ $(document).ready(function(){
 	}
 	
 	function init(){
-		// for(var index = 1 ; index <= imageCount ; index++){
-			// var zero = index > 9 ? '' : '0';
-			// wifeUrls.push('image/wife/wife' + zero + index + '.jpg');
-		// }
-		
 		initWifeImages();
 		
 		recalcImages();
@@ -98,8 +102,7 @@ $(document).ready(function(){
 	function initWifeImages(){		
 		$('#reversal .reversal-block').empty();
 		for(var t = 0; t < wifeUrls.length; t++){//true false
-			var wife = wifeUrls[t];
-			createNakedBottom(wife, t);
+			createNakedBottom(wifeUrls[t], t);
 		}
 	}
 	
@@ -107,16 +110,32 @@ $(document).ready(function(){
 		var divNakedBottom = $('<div>');
 		divNakedBottom.addClass('reversal-content');
 		divNakedBottom.attr('index', index);
+		divNakedBottom.css('border-color', wife.textColor);
 		
-		var rankBlock = $('<div>');
-		rankBlock.addClass('rank');
-		rankBlock.text(`porn: ${wife.porn}`);
-		divNakedBottom.append(rankBlock);
+		var imageHeader = $('<div>');
+		imageHeader.addClass('image-header');
+		
+		divNakedBottom.append(imageHeader);
+		
+		imageHeader.append(createSpan('name', wife.name));
+		
+		imageHeader.append(createSpan('porn', wife.porn));
+		
+		imageHeader.append(createSpan('nice', wife.nice));
 		
 		var imgNakedBottom = $('<img>');
 		imgNakedBottom.attr('src', wife.url);
 		divNakedBottom.append(imgNakedBottom);
 		
 		$('#reversal .reversal-block').append(divNakedBottom);
+	}
+	
+	function createSpan(className, innerText){
+		var span = $('<span>');
+		span.addClass(className);
+		//span.text(className + ': ' + innerText);
+		span.text(`${innerText}`);
+		span.text(`${innerText}`);
+		return span;
 	}
 });

@@ -44,19 +44,32 @@ $(document).ready(function(){
 
 
 
+	// for(let i = 0; i < wifeUrls.length -1; i++){
+		// let wifeCurrent = wifeUrls[i];
+		// let wifeNext = wifeUrls[i + 1];
+		// if (wifeCurrent.porn < wifeNext.porn) {
+			// wifeUrls[i + 1] = wifeCurrent;
+			// wifeUrls[i] = wifeNext;
+		// }	
+	// }
+	
+	
+	
+	
+	let maxNaceWife = wifeUrls[0].nice;
+	let maxNaceWifeUrl = wifeUrls[0].url;
 	for(let i = 0; i < wifeUrls.length -1; i++){
 		let wifeCurrent = wifeUrls[i];
-		let wifeNext = wifeUrls[i + 1];
-		if (wifeCurrent.porn < wifeNext.porn) {
-			wifeUrls[i + 1] = wifeCurrent;
-			wifeUrls[i] = wifeNext;
+		
+		if (wifeCurrent.nice > maxNaceWife) {
+			maxNaceWife = wifeCurrent.nice;
+			maxNaceWifeUrl = wifeCurrent.url;
 		}	
 	}
 	
-	let minPornUrl = wifeUrls[wifeUrls.length - 1].url;
-	console.log();
 	
-	$('#reversal img').attr('src', minPornUrl);
+	//let minPornUrl = wifeUrls[wifeUrls.length - 1].url;
+	$('#reversal img').attr('src', maxNaceWifeUrl);
 
 });
 

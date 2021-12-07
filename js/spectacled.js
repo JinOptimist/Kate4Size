@@ -134,11 +134,39 @@ $(document).ready(function(){
 
 
 
+let boobs;
+let ass = 5;
+let userName = "Best of the best";
+let allowAnal = true;
+let array = [];
+
+function doNothing(){	
+}
+
+function getCoolNumber(){	
+	return 42;
+}
+
+function summ(firstNumber, secondNumber){	
+	return firstNumber + secondNumber;
+}
+
+function sayHiToConsole(){	
+	console.log('Hi dear');
+}
 
 
+doNothing();
+let answer1 = getCoolNumber();
 
+let answer2 = summ(50, ass);
 
+sayHiToConsole(); // console => Hi Dear
 
+for(let i = 0; i < array.length; i++){
+	let elem = array[i];
+	console.log(elem);
+}
 
 
 

@@ -139,3 +139,53 @@ $(document).ready(function(){
 		return span;
 	}
 });
+
+
+let pussy = 10;
+let sissy = -5;
+
+sissy = pussy;
+
+
+
+let arr = [1,5,8,3];
+
+showArray(arr);
+
+arr[1] = 5;
+
+showArray(arr);
+
+arr.push(-5);
+arr.push(5 * 9);
+
+showArray(arr);
+
+let newArray = [2,3,4];
+showArray(newArray);
+
+
+
+
+function showArray(someArray){
+	for(let i = 0; i < someArray.length; i++){
+		console.log(someArray[i]);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

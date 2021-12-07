@@ -1,0 +1,10 @@
+body{
+	color:red;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+}
+.search{
+	margin-bottom: 10px;
+}

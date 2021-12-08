@@ -56,20 +56,44 @@ $(document).ready(function(){
 	
 	
 	
-	let maxNaceWife = wifeUrls[0].nice;
-	let maxNaceWifeUrl = wifeUrls[0].url;
-	for(let i = 0; i < wifeUrls.length -1; i++){
+	// let bestWife = wifeUrls[0];
+	
+	// for(let i = 0; i < wifeUrls.length; i++){
+		// let wifeCurrent = wifeUrls[i];
+		
+		// console.log(wifeCurrent.nice + wifeCurrent.porn);
+		// if (bestWife.nice + bestWife.porn >= wifeCurrent.nice + wifeCurrent.porn) {
+			// bestWife = wifeCurrent;
+			// console.log('change');
+		// }	
+	// }
+	// $('#reversal img').attr('src', bestWife.url);
+	
+	
+	
+	let goodWifes = [ ];
+	
+	for(let i = 0; i < wifeUrls.length; i++){
 		let wifeCurrent = wifeUrls[i];
 		
-		if (wifeCurrent.nice > maxNaceWife) {
-			maxNaceWife = wifeCurrent.nice;
-			maxNaceWifeUrl = wifeCurrent.url;
+		if (wifeCurrent.nice > 5) {
+			goodWifes.push(wifeCurrent);
+			console.log('push');
 		}	
 	}
 	
+	for(let i = 0; i < goodWifes.length; i++){
+		let goodWifeUrl = goodWifes[i];
+		console.log(goodWifeUrl.url);
+		
+		var clone = $(".reversal-content:first-child").clone();
+		clone.find('img').attr('src', goodWifeUrl.url);
+		$(".reversal-block").append(clone);
+	}	
 	
-	//let minPornUrl = wifeUrls[wifeUrls.length - 1].url;
-	$('#reversal img').attr('src', maxNaceWifeUrl);
+	
+	
+	//$('#reversal img').attr('src', bestWife.url);
 
 });
 

@@ -91,10 +91,25 @@ $(document).ready(function(){
 		$(".reversal-block").append(clone);
 	}	
 	
-	
-	
-	//$('#reversal img').attr('src', bestWife.url);
+	for(let i = 0; i < wifeUrls.length; i++){
+		let wifeCurrent = wifeUrls[i];
+		let wifeCurrentUrl = wifeCurrent.url;
+		let slash = '/';
+		
+		let arrayOfStrings = wifeCurrentUrl.split(slash);
+		console.log(arrayOfStrings[arrayOfStrings.length - 1]);
+		let wifeName = arrayOfStrings[arrayOfStrings.length - 1];
+		let dot = '.';
+		let arrayLastElement =  wifeName.split(dot);
+		console.log(arrayLastElement[0]);
+		
+		let wifeCurrentName = wifeCurrent.name;
+		console.log(wifeCurrentName + '-' + arrayLastElement[0]);
 
+	}	
+	
+	
+	
 });
 
 

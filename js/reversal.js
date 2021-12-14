@@ -76,7 +76,7 @@ $(document).ready(function(){
 	for(let i = 0; i < wifeUrls.length; i++){
 		let wifeCurrent = wifeUrls[i];
 		
-		if (wifeCurrent.nice > 5) {
+		if (wifeCurrent.porn > 5) {
 			goodWifes.push(wifeCurrent);
 			console.log('push');
 		}	
@@ -107,9 +107,71 @@ $(document).ready(function(){
 		console.log(wifeCurrentName + '-' + arrayLastElement[0]);
 
 	}	
+	let maxPornWifeCount = 0;
+	for(let i = 0; i < wifeUrls.length; i++){
+		let wifeCurrent = wifeUrls[i];
+		
+		if (wifeCurrent.porn > 5) {
+			maxPornWifeCount = maxPornWifeCount + 1;
+			
+		}	
+	}
+	console.log(maxPornWifeCount);
 	
+	let sWifes = [ ];
+	for(let i = 0; i < wifeUrls.length; i++){
+		let wifeCurrent = wifeUrls[i];
+		let wifeCurrentName = wifeCurrent.name;
+		
+		if (wifeCurrent.name.includes('С')) {
+			sWifes.push(wifeCurrentName);
+			
+		}	
+		
+	}
+	console.log(sWifes);
 	
+	let sNotWifes = [ ];
+	for(let i = 0; i < wifeUrls.length; i++){
+		let wifeCurrent = wifeUrls[i];
+		let wifeCurrentName = wifeCurrent.name;
+		
+		if (wifeCurrent.name.includes('С') == false) {
+			sNotWifes.push(wifeCurrentName);
+			
+		}	
+		
+	}
+	console.log(sNotWifes);
 	
+	let kneesWifes = [ ];
+	for(let i = 1; i < 8; i++){
+		// let wifeCurrent = {};
+		// wifeCurrent.name = "knees" + i;
+		// wifeCurrent.url = 'image/knees/knees' + i +  '.jpg';
+		// wifeCurrent.porn = i;
+		// kneesWifes.push(wifeCurrent);
+
+		kneesWifes.push({
+			name: "knees" + i,
+			url: 'image/knees/knees' + i +  '.jpg',
+			porn: i
+		});		
+	}	
+		
+	console.log(kneesWifes);
+	
+	for(let i = 0; i < wifeUrls.length; i++){
+		let wifeCurrent = wifeUrls[i];
+		
+		if (wifeCurrent.porn < 5) {
+			wifeUrls.splice(i, 1);
+			i--;
+			console.log(wifeUrls);
+		}	
+	}
+	console.log(wifeUrls);
+
 });
 
 

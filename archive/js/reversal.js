@@ -56,20 +56,22 @@ $(document).ready(function(){
 	
 	
 	
-	let maxNaceWife = wifeUrls[0].nice;
-	let maxNaceWifeUrl = wifeUrls[0].url;
+	let bestWife = wifeUrls[0];
 	for(let i = 0; i < wifeUrls.length -1; i++){
 		let wifeCurrent = wifeUrls[i];
 		
-		if (wifeCurrent.nice > maxNaceWife) {
-			maxNaceWife = wifeCurrent.nice;
-			maxNaceWifeUrl = wifeCurrent.url;
-		}	
+		if (wifeCurrent.nice > bestWife.nice) {
+			bestWife = wifeCurrent;
+		}
+		if (wifeCurrent.nice == bestWife.nice
+			&& wifeCurrent.porn < bestWife.porn) {
+			bestWife = wifeCurrent;
+		}
 	}
 	
 	
 	//let minPornUrl = wifeUrls[wifeUrls.length - 1].url;
-	$('#reversal img').attr('src', maxNaceWifeUrl);
+	$('#reversal img').attr('src', bestWife.url);
 
 });
 

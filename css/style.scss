@@ -1,16 +1,18 @@
-header{
+header {
     background: rgb(173, 51, 51);
-    width:  100%;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main{
+
+.main {
     background: rgb(9, 84, 247);
     display: flex;
 }
-.mennu{
+
+.mennu {
     display: flex;
     flex-direction: column;
     background: rgb(97, 209, 229);
@@ -18,56 +20,91 @@ header{
 
     .myButton {
         box-shadow: 3px 4px 0px 0px #899599;
-        background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-        background-color:#ededed;
-        border-radius:15px;
-        border:1px solid #d6bcd6;
-        cursor:pointer;
-        color:#3a8a9e;
-        font-family:Arial;
-        font-size:17px;
-        padding:7px 25px;
-        text-decoration:none;
-        text-shadow:0px 1px 0px #e1e2ed;
+        background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+        background-color: #ededed;
+        border-radius: 15px;
+        border: 1px solid #d6bcd6;
+        cursor: pointer;
+        color: #3a8a9e;
+        font-family: Arial;
+        font-size: 17px;
+        padding: 7px 25px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #e1e2ed;
         margin: 10px;
 
         &:hover {
-            background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-            background-color:#bab1ba;
+            background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+            background-color: #bab1ba;
         }
-    
+
         &:active {
-            position:relative;
-            top:1px;
+            position: relative;
+            top: 1px;
         }
     }
 }
-.content{
+
+.content {
     background: rgb(221, 249, 151);
     flex: 1;
-    .content-block{
+
+    .content-block {
         width: 300px;
         height: 400px;
-        background-color: #899599;
+        background-color: #cde3ea;
         margin: 20px;
+        border: 3px rgb(41, 32, 32) solid;
+        border-radius: 11px;
+        text-align: center;
 
 
-        .content-bloc-name{
+        .content-bloc-name {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .content-bloc-img {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
 
         }
-        .content-bloc-img{
-        
+
+        .content-bloc-infa {
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            .content-bloc-infa-button {
+                flex: 3;
+                font-size: 20px;
+
+                &:hover {
+                    font-size: 25px;
+                    color: #5e2945;
+
+                    &:active {}
+                }
+            }
         }
-        .content-bloc-infa{
-        
-        }
+
     }
-
 }
 
 
-
-footer{
+footer {
     background: rgb(173, 51, 51);
     width: 100%;
     height: 100px;

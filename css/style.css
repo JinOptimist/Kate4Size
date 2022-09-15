@@ -49,8 +49,42 @@ header {
 .content .content-block {
   width: 300px;
   height: 400px;
-  background-color: #899599;
+  background-color: #cde3ea;
   margin: 20px;
+  border: 3px rgb(41, 32, 32) solid;
+  border-radius: 11px;
+  text-align: center;
+}
+.content .content-block .content-bloc-name {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.content .content-block .content-bloc-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .content-block .content-bloc-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.content .content-block .content-bloc-infa {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.content .content-block .content-bloc-infa .content-bloc-infa-button {
+  flex: 3;
+  font-size: 20px;
+}
+.content .content-block .content-bloc-infa .content-bloc-infa-button:hover {
+  font-size: 25px;
+  color: #5e2945;
 }
 footer {
   background: rgb(173, 51, 51);

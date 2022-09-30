@@ -45,6 +45,7 @@ header {
 .content {
   background: rgb(221, 249, 151);
   flex: 1;
+  display: flex;
 }
 .content .content-block {
   width: 300px;

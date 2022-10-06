@@ -5,12 +5,19 @@ function draw(array){
         for (let i = 0; i < array.length; i++) {
             const element = array[i];
 
-            
+            var imageBlock = $('<div>');
+            imageBlock.addClass('wife');
+
+            var dataBlock = $('<div>');
+            dataBlock.addClass('data');
+            dataBlock.text(`Porn: ${element.porn} Nice: ${element.nice}`);
+            imageBlock.append(dataBlock);
 
             var image = $('<img>');
-            image.addClass('wife');
             image.attr('src', element.url);
-            $('.content').append(image);
+            imageBlock.append(image);
+
+            $('.content').append(imageBlock);
         }
     })
 }

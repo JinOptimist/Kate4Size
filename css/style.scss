@@ -49,6 +49,7 @@ header {
     background: rgb(221, 249, 151);
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
 
     .content-block {
         width: 300px;
@@ -103,9 +104,27 @@ header {
 
     }
 
-    .wife{
-        max-width: 400px;
-        max-height: 400px;
+    .wife {
+        width: 400px;
+        height: 400px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .data {
+            font-size: 30px;
+            background: aliceblue;
+            border-radius: 10px;
+            padding: 3px;
+            border: 2px #ccc solid;
+        }
+
+        img {
+            max-width: 350px;
+            max-height: 350px;
+        }
     }
 }
 

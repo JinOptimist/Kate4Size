@@ -32,6 +32,21 @@ for (let row = 0; row < 5; row++) {
 
 
 
+// третья задача
+
+let answerArray = [];
+
+for (let i = 0; i < data.length; i++) {
+    const img = data[i];
+    if (img.porn < img.nice) {
+        answerArray.push(img);
+    }
+}
+draw(answerArray);
+
+
+
+
 
 
 

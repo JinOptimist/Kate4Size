@@ -44,8 +44,21 @@ for (let i = 0; i < data.length; i++) {
 }
 draw(answerArray);
 
+// четвертая задача
 
+answerArray = [];
 
+let imgPrev = data[0];
+for (let i = 1; i < data.length; i++) {
+    let imgCurrent = data[i];
+    if (imgCurrent.nice > imgPrev.nice) {
+
+        imgPrev = imgCurrent;
+        answerArray.push(imgPrev);
+    }
+
+}
+draw(answerArray);
 
 
 

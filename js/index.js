@@ -52,21 +52,27 @@ let imgPrevMax = data[0];
 for (let i = 1; i < data.length; i++) {
     let imgCurrentMax = data[i];
     if (imgCurrentMax.nice > imgPrevMax.nice) {
-
         imgPrevMax = imgCurrentMax;
-        answerArray.push(imgPrevMax);
     }
-
+}
+for (let i = 0; i < data.length; i++) {
+    let imgCurrent = data[i];
+    if (imgCurrent.nice == imgPrevMax.nice) {
+        answerArray.push(imgCurrent);
+    }
 }
 let imgPrevMin = data[0];
 for (let i = 1; i < data.length; i++) {
     let imgCurrentMin = data[i];
     if (imgCurrentMin.nice < imgPrevMin.nice) {
-
         imgPrevMin = imgCurrentMin;
-        answerArray.push(imgPrevMin);
     }
-
+}
+for (let i = 0; i < data.length; i++) {
+    let imgCurrent = data[i];
+    if (imgCurrent.nice == imgPrevMin.nice) {
+        answerArray.push(imgCurrent);
+    }
 }
 draw(answerArray);
 

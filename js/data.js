@@ -8,14 +8,7 @@ var data = [
         textColor: '#00FFCC'
 
     },
-    {
-        name: 'Счастливая эксбиционистка',
-        url: 'image/wife/wife02.jpg',
-        porn: 4,
-        nice: 7,
-        isPregnant: false,
-        textColor: '#FFFFCC',
-    },
+    
     {
         name: 'Соска это не обзывательство',
         url: 'image/wife/wife03.jpg',
@@ -31,6 +24,14 @@ var data = [
         nice: 5,
         isPregnant: true,
         textColor: '#FFC00C'
+    },
+    {
+        name: 'Счастливая эксбиционистка',
+        url: 'image/wife/wife02.jpg',
+        porn: 4,
+        nice: 7,
+        isPregnant: false,
+        textColor: '#FFFFCC',
     },
     {
         name: 'Подъезд не помеха',

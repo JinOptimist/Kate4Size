@@ -74,7 +74,23 @@ for (let i = 0; i < data.length; i++) {
         answerArray.push(imgCurrent);
     }
 }
+
+for (let index = 0; index < answerArray.length; index++) {
+    for (let i = 0; i < answerArray.length - 1 - index; i++) {
+        let imgCurrent = answerArray[i];
+        let imgNext = answerArray[i + 1];
+        if (imgCurrent.porn > imgNext.porn) {
+            answerArray[i] = imgNext;
+            answerArray[i + 1] = imgCurrent;
+        }
+    }
+}
+
+
+
 draw(answerArray);
+
+
 
 
 

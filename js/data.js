@@ -1,5 +1,13 @@
 var data = [
     {
+        name: 'Отличный вид',
+        url: 'image/wife/wife00.jpg',
+        porn: 7,
+        nice: 7,
+        isPregnant: false,
+        textColor: '#00FFCC'
+    },
+    {
         name: 'Соки любви',
         url: 'image/wife/wife01.jpg',
         porn: 5,

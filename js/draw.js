@@ -8,14 +8,19 @@ function draw(array){
             var imageBlock = $('<div>');
             imageBlock.addClass('wife');
 
-            var dataBlock = $('<div>');
-            dataBlock.addClass('data');
-            dataBlock.text(`Porn: ${element.porn} Nice: ${element.nice}`);
-            imageBlock.append(dataBlock);
+            var nameBlock = $('<div>');
+            nameBlock.addClass('data');
+            nameBlock.text(`${element.name}`);
+            imageBlock.append(nameBlock);
 
             var image = $('<img>');
             image.attr('src', element.url);
             imageBlock.append(image);
+
+            var dataBlock = $('<div>');
+            dataBlock.addClass('data');
+            dataBlock.text(`Porn: ${element.porn} Nice: ${element.nice}`);
+            imageBlock.append(dataBlock);
 
             $('.content').append(imageBlock);
         }

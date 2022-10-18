@@ -48,13 +48,23 @@ draw(answerArray);
 
 answerArray = [];
 
-let imgPrev = data[0];
+let imgPrevMax = data[0];
 for (let i = 1; i < data.length; i++) {
-    let imgCurrent = data[i];
-    if (imgCurrent.nice > imgPrev.nice) {
+    let imgCurrentMax = data[i];
+    if (imgCurrentMax.nice > imgPrevMax.nice) {
 
-        imgPrev = imgCurrent;
-        answerArray.push(imgPrev);
+        imgPrevMax = imgCurrentMax;
+        answerArray.push(imgPrevMax);
+    }
+
+}
+let imgPrevMin = data[0];
+for (let i = 1; i < data.length; i++) {
+    let imgCurrentMin = data[i];
+    if (imgCurrentMin.nice < imgPrevMin.nice) {
+
+        imgPrevMin = imgCurrentMin;
+        answerArray.push(imgPrevMin);
     }
 
 }

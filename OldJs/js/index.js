@@ -55,12 +55,16 @@ for (let i = 1; i < data.length; i++) {
         imgPrevMax = imgCurrentMax;
     }
 }
+console.log('max nice = ' + imgPrevMax.nice);
+
 for (let i = 0; i < data.length; i++) {
     let imgCurrent = data[i];
     if (imgCurrent.nice == imgPrevMax.nice) {
         answerArray.push(imgCurrent);
     }
 }
+console.log(answerArray);
+
 let imgPrevMin = data[0];
 for (let i = 1; i < data.length; i++) {
     let imgCurrentMin = data[i];

@@ -4,5 +4,5 @@ export interface IWife {
     porn: number;
     nice: number;
     isPregnant: boolean;
-    textColor: string;
+    textColor?: string;
 }

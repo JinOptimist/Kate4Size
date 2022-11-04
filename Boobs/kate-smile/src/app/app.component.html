@@ -1,11 +1,11 @@
 здесь будет сайт
 <header [siteName]="title"></header>
-
 <wife [element]="info"></wife>
-<wife name="Красотка"></wife>
-<wife name="Счастливая"></wife>
 
 
+<div *ngFor="let w of wifes">
+    <wife [element]="w"></wife>
+</div>
 
 <router-outlet></router-outlet>
 <footer></footer>

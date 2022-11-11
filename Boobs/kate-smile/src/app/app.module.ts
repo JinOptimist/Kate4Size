@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WifeComponent } from './components/wife/wife.component';
+import { SaitNameComponent } from './components/sait-name/sait-name.component';
+import { PornTextComponent } from './components/porn-text/porn-text.component';
+import { GaleryComponent } from './components/galery/galery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    WifeComponent
+    WifeComponent,
+    SaitNameComponent,
+    PornTextComponent,
+    GaleryComponent
   ],
   imports: [
     BrowserModule,

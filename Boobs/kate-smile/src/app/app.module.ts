@@ -9,6 +9,8 @@ import { WifeComponent } from './components/wife/wife.component';
 import { SaitNameComponent } from './components/sait-name/sait-name.component';
 import { PornTextComponent } from './components/porn-text/porn-text.component';
 import { GaleryComponent } from './components/galery/galery.component';
+import { OneBlockComponent } from './components/gallery/one-block/one-block.component';
+import { SortBlockComponent } from './components/gallery/sort-block/sort-block.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { GaleryComponent } from './components/galery/galery.component';
     WifeComponent,
     SaitNameComponent,
     PornTextComponent,
-    GaleryComponent
+    GaleryComponent,
+    OneBlockComponent,
+    SortBlockComponent
   ],
   imports: [
     BrowserModule,

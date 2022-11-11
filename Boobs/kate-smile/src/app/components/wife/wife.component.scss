@@ -1,3 +1,27 @@
-.wife-image{
-    max-width: 500px;
+$blockWidth : 600px;
+$blockHeight : $blockWidth * 3 / 4;
+$text-size : 20px;
+
+.wife {
+    width: $blockWidth;
+    height: $blockHeight;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wife .data {
+    font-size: $text-size;
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 3px;
+    border: 2px #ccc solid;
+}
+
+.wife img {
+    max-width: $blockWidth;
+    max-height: calc($blockHeight - $text-size * 2 - 20px);
+    border-radius: 20px;
 }

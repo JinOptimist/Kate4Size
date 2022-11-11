@@ -122,5 +122,7 @@ export class AppComponent {
       nice: 7,
       isPregnant: false,
     },
-  ];
+  ] as IWife[];
+
+  sortedWifes = this.wifes.sort((a, b) => b.porn - a.porn);
 }

@@ -1,10 +1,8 @@
 здесь будет сайт
 <header [siteName]="title"></header>
-<wife [element]="info"></wife>
 
-
-<div *ngFor="let w of wifes">
-    <wife [element]="w"></wife>
+<div class="wifes">
+    <wife *ngFor="let w of sortedWifes" [element]="w"></wife>
 </div>
 
 <router-outlet></router-outlet>

@@ -9,6 +9,8 @@ import { IWife } from './models/IWife';
 export class AppComponent {
   title = 'smile';
 
+  sortFieldName = 'porn';
+
   wifes = [
     {
       name: 'Отличный вид',

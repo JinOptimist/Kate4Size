@@ -8,14 +8,6 @@ import { IWife } from './models/IWife';
 })
 export class AppComponent {
   title = 'smile';
-  info = {
-    name: 'Отличный вид',
-    url: '/assets/images/Wife00.JPG',
-    porn: 7,
-    nice: 7,
-    isPregnant: false,
-    textColor: '#00FFCC'
-  };
 
   wifes = [
     {
@@ -120,6 +112,13 @@ export class AppComponent {
       url: '/assets/images/Wife13.JPG',
       porn: 5,
       nice: 7,
+      isPregnant: false,
+    },
+    {
+      name: 'Всеми способами',
+      url: '/assets/images/Wife14.JPG',
+      porn: 8,
+      nice: 4,
       isPregnant: false,
     },
   ] as IWife[];

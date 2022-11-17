@@ -17,6 +17,9 @@ export class AppComponent {
     textColor: '#00FFCC'
   };
 
+  
+
+
   wifes = [
     {
       name: 'Отличный вид',

@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  selector: 'porn-categories',
+  templateUrl: './porn-categories.component.html',
+  styleUrls: ['./porn-categories.component.scss']
 })
-export class GalleryComponent implements OnInit {
-
+export class PornCategoriesComponent implements OnInit {
   pornCategorieAray = [
     {
       name: 'Home porn',
@@ -27,7 +26,6 @@ export class GalleryComponent implements OnInit {
       danger: 3
     },
   ];
-
   constructor() { }
 
   ngOnInit(): void {

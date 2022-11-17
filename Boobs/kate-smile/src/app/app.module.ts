@@ -11,7 +11,7 @@ import { PornTextComponent } from './components/porn-text/porn-text.component';
 import { GaleryComponent } from './components/galery/galery.component';
 import { OneBlockComponent } from './components/gallery/one-block/one-block.component';
 import { SortBlockComponent } from './components/gallery/sort-block/sort-block.component';
-import { GalleryComponent } from './components/porn-categogorie/gallery/gallery.component';
+import { PornCategoriesComponent } from './components/porn-categories/porn-categories.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { GalleryComponent } from './components/porn-categogorie/gallery/gallery.
     GaleryComponent,
     OneBlockComponent,
     SortBlockComponent,
-    GalleryComponent
+    PornCategoriesComponent
   ],
   imports: [
     BrowserModule,

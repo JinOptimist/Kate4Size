@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GalleryComponent } from './gallery.component';
+import { PornCategoriesComponent } from './porn-categories.component';
 
-describe('GalleryComponent', () => {
-  let component: GalleryComponent;
-  let fixture: ComponentFixture<GalleryComponent>;
+describe('PornCategoriesComponent', () => {
+  let component: PornCategoriesComponent;
+  let fixture: ComponentFixture<PornCategoriesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GalleryComponent ]
+      declarations: [ PornCategoriesComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GalleryComponent);
+    fixture = TestBed.createComponent(PornCategoriesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

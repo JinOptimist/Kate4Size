@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'porn-category',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./porn-category.component.scss']
 })
 export class PornCategoryComponent implements OnInit {
+
+  @Input() pornCategory: any;
 
   constructor() { }
 

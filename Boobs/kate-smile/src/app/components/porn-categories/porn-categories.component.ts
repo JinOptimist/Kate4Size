@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./porn-categories.component.scss']
 })
 export class PornCategoriesComponent implements OnInit {
+  
   pornCategorieAray = [
     {
       name: 'Home porn',

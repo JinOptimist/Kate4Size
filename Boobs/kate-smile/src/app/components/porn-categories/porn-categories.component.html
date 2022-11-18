@@ -1,7 +1,5 @@
-<p>porn-categories works!</p>,
-<div *ngFor="let pornCategory of pornCategorieAray">
-    {{pornCategory.danger}}
-    {{pornCategory.name}}
-    <img class="porn-category-img" [src]="pornCategory.url" alt="">
-
+<p>porn-categories works!</p>
+<div class="porn-categories">
+    <porn-category *ngFor="let pornCategoryObject of pornCategorieAray" [pornCategory]="pornCategoryObject">
+    </porn-category>
 </div>

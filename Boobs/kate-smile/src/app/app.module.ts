@@ -13,6 +13,10 @@ import { OneBlockComponent } from './components/gallery/one-block/one-block.comp
 import { SortBlockComponent } from './components/gallery/sort-block/sort-block.component';
 import { PornCategoriesComponent } from './components/porn-categories/porn-categories.component';
 import { PornCategoryComponent } from './components/porn-categories/porn-category/porn-category.component';
+import { ForAdultsComponent } from './components/for-adults/for-adults.component';
+import { ForAdultsBoxComponent } from './components/for-adults/for-adults-box/for-adults-box.component';
+import { SexToysComponent } from './components/sex-toys/sex-toys.component';
+import { SexToysCategoryComponent } from './components/sex-toys/sex-toys-category/sex-toys-category.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { PornCategoryComponent } from './components/porn-categories/porn-categor
     OneBlockComponent,
     SortBlockComponent,
     PornCategoriesComponent,
-    PornCategoryComponent
+    PornCategoryComponent,
+    ForAdultsComponent,
+    ForAdultsBoxComponent,
+    SexToysComponent,
+    SexToysCategoryComponent
   ],
   imports: [
     BrowserModule,

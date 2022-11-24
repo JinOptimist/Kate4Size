@@ -1,0 +1,26 @@
+<p>for-adults-box works!</p>
+{{forAdults.url}}
+<div class="for-adults-objekt">
+    <div class="for-adults-name">
+        {{forAdults.name}}
+    </div>
+    <div class="for-adults-info">
+        <div>
+            <div class="for-adults-img-box">
+                <img class="for-adults-img" [src]="forAdults.url" alt="">
+            </div>
+            
+        </div>
+        <div>
+            <div class="for-adults-txt">
+               здесь будет описание котегории.
+            </div>
+            <div class="for-adults-txt">
+                {{forAdults.danger}}
+            </div>
+            <div class="for-adults-txt">
+                {{forAdults.stock}}
+            </div>
+        </div>
+    </div>
+</div>

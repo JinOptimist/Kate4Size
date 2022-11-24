@@ -11,9 +11,6 @@ export class AppComponent {
 
   sortFieldName = 'porn';
 
-  
-
-
   wifes = [
     {
       name: 'Отличный вид',
@@ -128,5 +125,8 @@ export class AppComponent {
     },
   ] as IWife[];
 
-  sortedWifes = this.wifes.sort((a, b) => b.porn - a.porn);
+  sortedWifes = this
+    .wifes
+    .sort((a, b) => b.porn - a.porn)
+    .filter(x => x.porn < 3);
 }

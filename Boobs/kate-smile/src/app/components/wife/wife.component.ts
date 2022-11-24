@@ -18,4 +18,8 @@ export class WifeComponent implements OnInit {
     this.title = 'рад на неё смотреть';
   }
 
+  like(){
+    this.element.porn++;
+  }
+
 }

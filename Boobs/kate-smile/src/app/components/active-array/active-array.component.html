@@ -1,0 +1,8 @@
+<p>Делаем {{name}} программирование )))</p>
+<div>
+    <button (click)="addImage()">Жмяк</button>
+</div>
+<div class="images">
+    <img *ngFor="let wifesUrl of wifesUrls" [src]="wifesUrl" />
+</div>
+

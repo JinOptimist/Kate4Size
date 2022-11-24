@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SortBlockComponent } from './sort-block.component';
+import { ActiveArrayComponent } from './active-array.component';
 
-describe('SortBlockComponent', () => {
-  let component: SortBlockComponent;
-  let fixture: ComponentFixture<SortBlockComponent>;
+describe('ActiveArrayComponent', () => {
+  let component: ActiveArrayComponent;
+  let fixture: ComponentFixture<ActiveArrayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SortBlockComponent ]
+      declarations: [ ActiveArrayComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SortBlockComponent);
+    fixture = TestBed.createComponent(ActiveArrayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

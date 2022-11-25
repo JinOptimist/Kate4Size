@@ -1,8 +1,12 @@
-<p>Делаем {{name}} программирование )))</p>
+<p>Делаем программирование )))</p>
 <div>
-    <button (click)="addImage()">Жмяк</button>
+    <button (click)="addAutoImage()">Авто Жмяк</button>
+</div>
+<div>
+    <input [(ngModel)]="newWifeUrl" />
+    <button (click)="addCustomImage()">Умный Жмяк</button>
 </div>
 <div class="images">
-    <img *ngFor="let wifesUrl of wifesUrls" [src]="wifesUrl" />
+    <img *ngFor="let wifesUrl of wifesUrls" [src]="wifesUrl" (click)="removeImage(wifesUrl)" />
 </div>
 

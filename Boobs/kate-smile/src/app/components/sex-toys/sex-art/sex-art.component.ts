@@ -21,4 +21,7 @@ export class SexArtComponent implements OnInit {
     this.sexArtArray.push(newImageUrl);
     this.index++;
   }
+  removeImage(url: string) {
+    this.sexArtArray = this.sexArtArray.filter(sexArt => sexArt != url);
+  }
 }

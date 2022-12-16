@@ -2,5 +2,5 @@
     <button class="button-click" (click)="addImg()">клик</button>
 </div>
 <div class="images">
-    <img *ngFor="let sexArt of sexArtArray" [src]="sexArt" />
+    <img *ngFor="let sexArt of sexArtArray" [src]="sexArt" (click)="removeImage(sexArt)"/>
 </div>

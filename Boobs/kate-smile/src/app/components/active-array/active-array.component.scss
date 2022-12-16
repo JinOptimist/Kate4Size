@@ -1,3 +1,13 @@
-.images img{
-    max-height: 200px;
+.images {
+    display: flex;
+    flex-wrap: wrap;
+
+    .wife-block{
+        margin: 5px;
+
+        img{
+            max-height: 200px;
+        }
+    }
+    
 }

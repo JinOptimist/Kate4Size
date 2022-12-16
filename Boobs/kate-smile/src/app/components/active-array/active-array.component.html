@@ -1,12 +1,16 @@
 <p>Делаем программирование )))</p>
 <div>
-    <button (click)="addAutoImage()">Авто Жмяк</button>
+    <button (click)="addAutoImage()">Авто Жмяк {{wifeModels.length}}</button>
 </div>
 <div>
     <input [(ngModel)]="newWifeUrl" />
     <button (click)="addCustomImage()">Умный Жмяк</button>
 </div>
 <div class="images">
-    <img *ngFor="let wifesUrl of wifesUrls" [src]="wifesUrl" (click)="removeImage(wifesUrl)" />
-</div>
+    <div *ngFor="let wifeModel of wifeModels" class="wife-block">
+        <h2>{{wifeModel.name}}</h2>
+        <img [src]="wifeModel.url" (click)="removeImage(wifeModel.url)" />
+        <div>Porn: {{wifeModel.porn}}</div>
+    </div>
 
+</div>

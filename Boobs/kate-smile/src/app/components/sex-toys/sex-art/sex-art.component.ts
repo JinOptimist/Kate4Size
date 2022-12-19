@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ISexArtModel } from 'src/app/models/sexArtModel'
 
 @Component({
   selector: 'sex-art',
@@ -6,22 +7,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sex-art.component.scss']
 })
 export class SexArtComponent implements OnInit {
-  name: string;
-  sexArtArray: string[];
-  private index: number = 1;  
+
+  sexArtArray: ISexArtModel[];
+
+  private index: number = 1;
+
   constructor() {
-    this.name = "Катя";
-    this.sexArtArray = [];
-   }
+
+    this.sexArtArray = [
+
+    ];
+  }
 
   ngOnInit(): void {
   }
   addImg() {
     let newImageUrl = `/assets/images/sexArt/sexArt0${this.index}.jpg`;
-    this.sexArtArray.push(newImageUrl);
+    const artSex =
+      {
+        name: 'Art ' + this.index,
+        art: 3,
+        url: newImageUrl,
+      } as ISexArtModel;
+    this.sexArtArray.push(artSex);
     this.index++;
   }
   removeImage(url: string) {
-    this.sexArtArray = this.sexArtArray.filter(sexArt => sexArt != url);
+    this.sexArtArray = this.sexArtArray.filter(sexArt => sexArt.url != url);
+    this.index--;
   }
 }

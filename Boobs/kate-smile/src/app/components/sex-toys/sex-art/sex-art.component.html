@@ -1,6 +1,18 @@
 <div>
     <button class="button-click" (click)="addImg()">клик</button>
 </div>
+
+
 <div class="images">
-    <img *ngFor="let sexArt of sexArtArray" [src]="sexArt" (click)="removeImage(sexArt)"/>
+    <img *ngFor="let sexArt of sexArtArray" [src]="sexArt" (click)="removeImage(sexArt.url)"/>
+</div>
+
+
+<div class="images">
+    <div *ngFor="let sexArt of sexArtArray">
+        <h2>{{sexArt.name}}</h2>
+        <img [src]="sexArt.url" (click)="removeImage(sexArt.url)" />
+        <div>nice: {{sexArt.nice}}</div>
+    </div>
+
 </div>

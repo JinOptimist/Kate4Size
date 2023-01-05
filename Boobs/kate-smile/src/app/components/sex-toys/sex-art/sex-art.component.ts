@@ -26,9 +26,11 @@ export class SexArtComponent implements OnInit {
     const artSex =
       {
         name: 'Art ' + this.index,
-        art: 3,
+        art: this.index +1,
         url: newImageUrl,
+        //nice: this.sexArtArray[0].nice + 1
       } as ISexArtModel;
+      artSex.nice = artSex.art - 3;
     this.sexArtArray.push(artSex);
     this.index++;
   }

@@ -1,6 +1,17 @@
 .images img{
+    display: flex;
     max-height: 200px;
     margin: 5px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 .button-click{
     margin: 5px;

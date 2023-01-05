@@ -8,35 +8,15 @@ import { IWifeModel } from 'src/app/models/IWifeModel'
 })
 export class ActiveArrayComponent implements OnInit {
   newWifeUrl: string;
+  newWifePorn: number = 0;
+  newWifeNice: number = 1;
   wifeModels: IWifeModel[];
 
   private index: number = 0;
 
   constructor() {
     this.newWifeUrl = "/assets/images/Wife00.JPG";
-    this.wifeModels = [
-      {
-        name: 'Отличный вид',
-        url: '/assets/images/Wife00.JPG',
-        porn: 7,
-        nice: 7,
-        isPregnant: false,
-      },
-      {
-        name: 'Соки любви',
-        url: '/assets/images/Wife01.JPG',
-        porn: 5,
-        nice: 3,
-        isPregnant: false,
-      },
-      {
-        name: 'Соска это не обзывательство',
-        url: '/assets/images/Wife03.JPG',
-        porn: 6,
-        nice: 4,
-        isPregnant: false,
-      },
-    ];
+    this.wifeModels = [];
 
     this.index = this.wifeModels.length;
 
@@ -63,7 +43,14 @@ export class ActiveArrayComponent implements OnInit {
   }
 
   addCustomImage() {
-    //this.wifesUrls.push(this.newWifeUrl);
+    const wife = {
+      url: this.newWifeUrl,
+      name: 'wife ' + this.index,
+      porn: this.newWifePorn,
+      nice: this.newWifeNice
+    } as IWifeModel;
+
+    this.wifeModels.push(wife);
   }
 
   removeImage(url: string) {

@@ -16,6 +16,7 @@ import { ActiveArrayComponent } from './components/active-array/active-array.com
 import { FormsModule } from '@angular/forms';
 import { SexArtComponent } from './components/sex-toys/sex-art/sex-art.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { PosesComponent } from './components/poses/poses.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     SexToysCategoryComponent,
     ActiveArrayComponent,
     SexArtComponent,
-    CarouselComponent
+    CarouselComponent,
+    PosesComponent
   ],
   imports: [
     BrowserModule,

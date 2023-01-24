@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IWifeModel } from 'src/app/models/IWifeModel'
+import { IWifeModel } from 'src/app/models/IWifeModel';
 
 @Component({
   selector: 'active-array',

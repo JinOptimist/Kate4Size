@@ -5,10 +5,24 @@
 }
 .total-count{
     color: blueviolet;
+    padding: 5px;
+    padding-left: 30px;
+}
+.button{
+    height: 30px;
 }
 .img-container{
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
 
+}
+.gallery-img{
+    padding: 5px;
+}
+.current-number{
+    display: flex;
+    justify-content: center;
+    
 }

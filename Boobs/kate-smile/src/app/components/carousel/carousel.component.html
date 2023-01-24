@@ -1,11 +1,11 @@
 <div class="carousel">
     <span class="total-count">9</span>
     <div class="img-container">
-        <button>&#60;</button>
+        <button class="button" (click)="pastImg()">&#60;</button>
         <div class="gallery-img">
-            <div class="current-number">1</div>
-            <img />
+            <div class="current-number">{{index}}</div>
+            <img [src]="currentBookUrl">
         </div>
-        <button>&#62;</button>
+        <button class="button" (click)="nextImg()">&#62;</button>
     </div>
 </div>
